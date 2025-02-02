@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valor Clash</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: linear-gradient(135deg, #0a0a1a 0%, #1a1a2f 100%);
+            color: #fff;
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header Styles */
+        header {
+            padding: 2rem 0;
+            position: relative;
+            background: rgba(0,0,0,0.4);
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 2rem;
+            color: #00ff9d;
+            text-shadow: 0 0 10px rgba(0, 255, 157, 0.5);
+        }
+
+        /* Hero Section */
+        .hero {
+            height: 80vh;
+            display: flex;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAIklEQVQIW2NkQAKrVq36zwjjgzhhYWGMYAEYB8RmROaABADeOQ8CXl/xfgAAAABJRU5ErkJggg==');
+            opacity: 0.1;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+            text-align: center;
+            width: 100%;
+        }
+
+        h1 {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 4rem;
+            margin-bottom: 2rem;
+            text-transform: uppercase;
+            background: linear-gradient(45deg, #00ff9d, #00b8ff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: glow 2s ease-in-out infinite alternate;
+        }
+
+        @keyframes glow {
+            from {
+                text-shadow: 0 0 10px rgba(0, 255, 157, 0.3),
+                             0 0 20px rgba(0, 255, 157, 0.3),
+                             0 0 30px rgba(0, 255, 157, 0.3);
+            }
+            to {
+                text-shadow: 0 0 20px rgba(0, 255, 157, 0.6),
+                             0 0 30px rgba(0, 255, 157, 0.6),
+                             0 0 40px rgba(0, 255, 157, 0.6);
+            }
+        }
+
+        /* Email Form */
+        .email-form {
+            max-width: 600px;
+            margin: 2rem auto;
+            position: relative;
+        }
+
+        input[type="email"] {
+            width: 100%;
+            padding: 1.5rem;
+            border-radius: 50px;
+            border: 2px solid #00ff9d;
+            background: rgba(0,0,0,0.6);
+            color: #fff;
+            font-size: 1.2rem;
+            padding-right: 180px;
+            transition: all 0.3s ease;
+        }
+
+               
+
+
+
+        /* Features Grid */
+        .features {
+            padding: 5rem 0;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .feature-card {
+            background: rgba(255,255,255,0.05);
+            padding: 2rem;
+            border-radius: 15px;
+            border: 1px solid rgba(0, 255, 157, 0.2);
+            transition: all 0.3s ease;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 30px rgba(0, 255, 157, 0.1);
+        }
+
+        .feature-icon {
+            font-size: 2.5rem;
+            color: #00ff9d;
+            margin-bottom: 1rem;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.5rem;
+            }
+
+            
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <div class="logo">Valor Clash</div>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Elevate Your Gaming</h1>
+                <p class="subtitle">Join the next generation of competitive gaming by filling the form below👇👇</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="container">
+        <div class="features">
+                        <div class="feature-card">
+                <div class="feature-icon">🚀</div>
+                <h3>Elite Tournaments</h3>
+                <p>Compete in high-stakes tournaments with massive prize pools.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🏆</div>
+                <h3>Pro Ranking System</h3>
+                <p>Climb the leaderboards and prove your skills globally & get rewarded with cash prizes.</p>
+            </div>
+        </div>
+        </section>
+        <div>
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfHUfIof5n3q_Xe_2fLwwhIYtkZsWTkOcujuQdO7VFRl-yq1A/viewform?embedded=true" width="640" height="819" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+    </div>
+    </section>
+
+    
+</body>
+</html>
